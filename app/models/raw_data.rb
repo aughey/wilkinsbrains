@@ -1,6 +1,11 @@
 require 'digest/sha1'
 require 'fileutils'
 
+# RawData acts like a basic key => value system that operates like git does
+# with respect to taking a SHA hash of the data and writing it to storage.
+# This is designed to write it to a directory of files, with the anticipation
+# that another sweeper will come around and garbage collect these files to
+# a more permemant and compressed storage system.
 class RawData
   def self.path
     "rawstore"
