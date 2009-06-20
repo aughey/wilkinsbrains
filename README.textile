@@ -1,0 +1,64 @@
+.h1 Introduction
+
+The name "Wilkin's Brains" comes from a guy I work with at Boeing.  Long
+before I arrived, he was a young engineer who carried around schematic
+drawings for a system he was working on.  These schematic drawings became
+known as "Wilkin's Brains" because they held all the information that he needed
+to do his job on a daily basis.
+
+This project is along those same lines for allowing people to manage their
+information in a logical and permenant way.
+
+This encarnation of the project is a continuation of a project I used to
+call Buckets.
+
+.h1 Use Cases
+
+To describe what this program does, I'll start with some use cases to
+explain some of the needs I want this to fill.  
+
+I'll be the first to admit that there are some major overlaps with other
+database systems and services already out there and that is no accident.
+I am influenced by what I see and read about on the Internet.  Services
+like Zoho, some 37signals products, and even low level databases such
+as CouchDB have influenced this.  Perhaps one of these systems is better
+suited for my needs - we will see.
+
+.h2 Phone Logs
+
+When I'm going to make a business (or even personal) call to someone, I'd
+like to keep a record of who, what, where, when, etc.  A call has lots
+of context - "what project is being discussed", "who is being called",
+"who is being talked about", "what is being talked about", "what the
+outcome is", "what actions need to happen as a result of this call", etc.
+Below is what I want to do when making a call.
+
+I start by creating a call record (some sort of dropdown or list of
+possible records I can create).  This call record is not much more than a
+dated and typed record that is used as a container to hold other things.
+On my screen I have a newly created blank call record.  I'm going to
+call Dan to talk about a business idea, so I find Dan's person record in
+the quick search box and drag his person record into the call record.
+All of Dan's information is shown in the call record, but it's really
+just a reference back to his actual person record.
+
+We're going to discuss a new idea I had and previously I had created an
+idea record of my thoughts.  I find this in the quick search box and drag
+it into the call record too.
+
+While talking, I create a new note record inside the call record that
+is just a free-form text field.  Perhaps we use a Google Wave or EtherPad
+type system too.  All of these actions are all being associated with the
+original call record that I created.
+
+When done talking, we each may have some things to do.  I can create an
+action record that is basically a todo asking for a title and description.
+I drag my own user record and Dan's user record into different actions
+to denote who needs to work on these things.  These are readily available
+on the screen already.
+
+I might drag this call record itself into a container that holds our
+conversations, or maybe tag the call record with ThinkSplat.  Whatever
+is appropriate for our own organization.
+
+.h2 
