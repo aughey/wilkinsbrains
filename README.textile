@@ -97,3 +97,29 @@ drag all the items into the appropriate folders.  As items are aquired,
 they are moved from one folder to another.
 
 There is much more to this story that needs to be written.
+
+h2. File Archival
+
+Files are important, disks are cheap, and hardware and users are
+unreliable.  What I mean by this is, there are some really important
+files that we don't want to lose such as digital photographs, family
+videos, documents, things we purchase online, etc.  We put these files on a
+single piece of magnetic metal spinning at 7200 RPM microns away from a
+moving head and impending doom.  To increase our risk, we store them in
+a volatile filesystem where accidental deletion or misuse can wipe out
+unreplacable data.
+
+This isn't an advertisement for a backup system, but it might as well be
+because that is an eventual consequence of this use case.  These files
+are primarily write-once-read-many types files.  You don't edit original
+photographs or videos; documents may change but you may what an older
+version; things your purchase online don't change either.
+
+When storing files in this system, they can be stored along side
+with other data or organizated in some way that is meaningful to you.
+Files can be tagged like any other record and can be associated with
+any number of other records.  
+
+Uploading files could either be done with a web browser or some drag and
+drop type system or even automatically when files change.  Once in
+the system, they can be manipulated as needed.
