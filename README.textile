@@ -58,7 +58,42 @@ to work on these things.  These are user records are readily available
 on the screen already.
 
 I might drag this call record itself into a container that holds our
-conversations, or maybe tag the call record with ThinkSplat.  Whatever
-is appropriate for our own organization.
+conversations, or maybe tag the call record with our business name.
+Whatever organization method works for us.
 
-h2. 
+h2. Event Organization
+
+h4. This explains how one might build a database.
+
+My church is having an auction event where they need to keep track of
+administrative "stuff".  Things they may need to keep track of are
+ideas, call records, solicited items, aquired items, invited people,
+seating charts, and so on.  The list of things evolves as their needs
+change and the organization (schema) of those things also evolves over time.
+
+To create this organization system, we need some basic types.  These types
+are generally listed above.  We start by creating an auction type and an
+auction has a title and description.  An auction has many items and ideas,
+so we create those types and tell auction type that it can have children
+of these types.  In a sense, we've created a has_many relationship,
+but let's not think of that right now.  Auctions can have many ideas
+and can have many items.
+
+Let's start using this because we have some ideas.  We create a new
+auction called "Gala 2009" and in that auction create some new ideas.
+We also have some items left over from the last auction so we add those
+to the auction as well.
+
+Now the "Gala 2009" auction page has a bunch of stuff on it.  It has a
+bunch of items and a bunch of ideas all inline.  We'd like to declutter
+this a bit so we go to the Auction type and change its view.  Rather than
+showing all the children inline, we set it up to show links to the items
+and ideas.  Now clicking on the items in an auction will open up a new
+page showing the items associated with that auction.
+
+We now decide we want to differenitate between pending items and
+committed items.  So we drop a couple of folders into the auction and
+drag all the items into the appropriate folders.  As items are aquired,
+they are moved from one folder to another.
+
+There is much more to this story that needs to be written.
