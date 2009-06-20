@@ -1,6 +1,8 @@
 require 'config/environment'
 require 'find'
 
+storage = Gitish
+
 for dir in ARGV
   Find.find(dir) do |path|
     if File.file?(path)
@@ -8,8 +10,8 @@ for dir in ARGV
       begin
         File.open(path) do |file|
           tostore = file.read
-          sha = RawData.store(tostore)
-          data = RawData.get(sha)
+          sha = storage.store(tostore)
+          data = storage.get(sha)
           raise "Didn't get what I asked" unless data == tostore
         end
       rescue Exception => e
@@ -18,3 +20,5 @@ for dir in ARGV
     end
   end
 end
+
+storage.sync
