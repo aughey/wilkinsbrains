@@ -48,17 +48,17 @@ it into the call record too.
 
 While talking, I create a new note record inside the call record that
 is just a free-form text field.  Perhaps we use a Google Wave or EtherPad
-type system too.  All of these actions are all being associated with the
+type system too.  All of these records are being associated with the
 original call record that I created.
 
-When done talking, we each may have some things to do.  I can create an
-action record that is basically a todo asking for a title and description.
-I drag my own user record and Dan's user record into different actions
-to denote who needs to work on these things.  These are readily available
+When done talking, we each may have some things to do.  I can create
+action records that asking for a title and description.  I drag these
+actions into my own user record and Dan's user record to denote who needs
+to work on these things.  These are user records are readily available
 on the screen already.
 
 I might drag this call record itself into a container that holds our
 conversations, or maybe tag the call record with ThinkSplat.  Whatever
 is appropriate for our own organization.
 
-h2.
+h2. 
