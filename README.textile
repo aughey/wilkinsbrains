@@ -123,3 +123,38 @@ any number of other records.
 Uploading files could either be done with a web browser or some drag and
 drop type system or even automatically when files change.  Once in
 the system, they can be manipulated as needed.
+
+h2. Important Documents
+
+This is almost the same as the file archival, but is stuff that gets
+generated from other sources.  These would be things like software keys,
+e-mailed receipts, confirmations, etc.  Things where you just need to
+squirrel away the information in the rare case where you might need to 
+retrieve it.  
+
+GMail does a pretty good job, but it doesn't put the information
+along side of the rest of the document.  GMail is GMail and that's it.
+If you're entire project documents and other information is stored in
+this system, then having it in e-mail is not right.  You might also want
+to store it in more than one place in this system, perhaps either tagged
+or associated with multiple other records.
+
+.h1 Concepts
+
+The stories have gotten a bit long winded and probably scattered your
+thoughts more than I wanted.  Let's get down to some core concepts that
+define this information system.
+
+.h2 Records
+
+We got to have records.  This is just a given.  A record is a typed thing
+with attributes.  The attributes can be strings, integers, floats, and so
+on.  These could map to tables in a typical database.
+
+.h2 Associations
+
+This is the one of the key concepts.  Two records can be linked togeter
+by some sort of association.  Associating two different records has meaning
+by way of context.  If an Item is associated with an Auction, that means
+something to the person creating the association.  In this case, it likely
+means that the item will be part of the auction.  
